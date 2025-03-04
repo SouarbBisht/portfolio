@@ -1,0 +1,246 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* Hero Section */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+#home-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.home h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.hire-me {
+    font-size: 1.8rem;
+    color: white;
+    background-color: #90ee90;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+.hire-me:hover {
+    background-color: #b74b4b;
+    color: white;
+}
+
+/* Download Resume Button */
+.download-resume {
+    font-size: 1.8rem;
+    color: white;
+    background-color: #b74b4b;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+.download-resume:hover {
+    background-color: #90ee90;
+    color: black;
+}
+
+/* Social Links at the bottom of home-content */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 1.8rem;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #333;
+    transition: 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #b74b4b;
+    background-color: white;
+    border: 2px solid #b74b4b;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 20px 0;
+    justify-content: flex-start;
+}
+
+.skill {
+    background-color: #333;
+    padding: 15px;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background-color: #b74b4b;
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #333;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-link {
+    display: block;
+    margin-top: 10px;
+    color: #b74b4b;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Section container styling */
+.section-container {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+/* Section headers */
+section h2 {
+    color: #b74b4b;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Contact link */
+.contact-link {
+    font-size: 1.8rem;
+    color: #90ee90;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-link:hover {
+    color: #b74b4b;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="ham-menu" id="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">Sourab Bisht</a>
+        <nav id="nav-links">
+            <a href="#about-me" onclick="scrollToSection('about-me')">About Me</a>
+            <a href="#skills" onclick="scrollToSection('skills')">Skills</a>
+            <a href="#projects" onclick="scrollToSection('projects')">Projects</a>
+            <a href="#experience" onclick="scrollToSection('experience')">Experience</a>
+            <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="home">
+        <div id="home-img">
+            <img src="/images/IMG_3926.jpg" alt="Home Image">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm Sourab Bisht</h1>
+            <h2>A Passionate Frontend Developer</h2>
+            <p>As a frontend developer, I create visually appealing and user-friendly websites using HTML, CSS, and JavaScript. I'm passionate about learning new skills and turning creative ideas into responsive, interactive web experiences.</p>
+            <a href="#contact" class="hire-me">Hire Me</a>
+
+            <!-- Download Resume Button -->
+            <a href="/path-to-your-resume.pdf" download class="download-resume">Download Resume</a>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sourabbisht" target="_blank" class="social-icon">LinkedIn</a>
+                <a href="https://github.com/sourabbisht" target="_blank" class="social-icon">GitHub</a>
+                <a href="https://www.instagram.com/sourabbisht" target="_blank" class="social-icon">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections (About, Skills, Projects, Experience, Contact) -->
+    <section id="about-me" class="section-container">
+        <h2>About Me</h2>
+        <p>Here is some information about me...</p>
+    </section>
+
+    <!-- Skills Section with Horizontal Scrolling -->
+    <section id="skills" class="section-container">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Git</div>
+            
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-container">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project`">
+                <img src="project1.jpg" alt="Project 1"><img src="/images/yt copy.jpg" alt="">
+                <a href="https://utube-clone-d8bff.web.app/" class="project-link">View Project</a>
+            </div>
+            <div class="project">
+                <img src="project2.jpg " alt="Project 2">
+
+                <a href="https://github.com/your-project-2" class="project-link">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-container">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, feel free to send me an email.</p>
+        <a href="mailto:sourab.bisht@example.com" class="contact-link">Email Me</a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
